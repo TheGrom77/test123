@@ -1,0 +1,113 @@
+body{
+    background: black;
+}
+@font-face{
+    font-family: "roboto";
+    src: url(../font/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+    font-family: "ofont";
+    src: url(../font/ofont.ru_Ebbe.ttf);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    background: url("../img/gepard.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+    aspect-ratio: 2/1;
+    box-shadow: 2px 2px 5px rgba(154, 147, 140, 0.5) 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.5em + 1vm);
+    color: #DCDCDC;
+    flex-grow: 1;
+}
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "ofont";
+    margin-left: 50px;
+}
+.nav-item:hover{
+    text-shadow: 5px 5px 10px red, 1px 1px 1px green;
+}
+.bg-line{
+    background: url("../img/zveryshki.webp");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    margin: 25px 0;
+    font-family: "roboto"
+}
+.head{
+    text-align: center;
+    font-size: calc(1.5rem + 5vm);
+    letter-spacing: 2rem;
+    color: rgb(198, 181, 86);
+    text-shadow: 2px 2px 1px #000;
+}
+.line{
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+}
+.img1{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.text1{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+}
+.img2{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.img2 img, .img1 img{
+width: 100%;
+height: auto;
+}
+.text2{
+    color: white;
+    font-size: calc(00.5em + 1vm);
+    margin: 0px 10px 10px 20px;
+    flex: 1 1 50%;
+}
+footer{
+    color: #FFF0F5;
+    display: flex;
+    width: 100%;
+    background-color: #333333;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.footer-nav-item{
+    font-size: calc(0.2em + 1vm);
+}
+.icons{
+    display: flex;
+    width: 30vm;
+    justify-content: space-around;
+    align-items: center;
+}
